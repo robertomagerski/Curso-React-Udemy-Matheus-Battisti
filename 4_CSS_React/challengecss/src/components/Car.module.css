@@ -1,0 +1,8 @@
+.list_cars {
+  align-items: center;
+  justify-content: center;
+  color: green;
+  border: 2px solid white;
+  padding: 20px;
+  font-size: medium;
+}
