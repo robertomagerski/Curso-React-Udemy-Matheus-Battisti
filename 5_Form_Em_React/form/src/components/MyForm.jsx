@@ -35,7 +35,7 @@ const MyForm = ({ user }) => {
             type="text"
             name="name"
             placeholder="Digite seu nome"
-            onChange={handleInput}
+            onChange={  }
             value={name}
           />
         </div>
