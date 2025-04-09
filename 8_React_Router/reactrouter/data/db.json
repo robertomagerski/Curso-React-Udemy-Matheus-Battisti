@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "nome": "Calça",
+      "price": 55
+    },
+    {
+      "id": 2,
+      "nome": "Tênis",
+      "price": 500
+    },
+    {
+      "id": 3,
+      "nome": "Shorts",
+      "price": 100
+    }
+  ]
+}
