@@ -22,7 +22,7 @@ export const useFetch = (url) => {
   const httpConfig = (data, method) => {
     if (method === "POST") {
       setConfig({
-        method,
+        method, 
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
@@ -57,7 +57,7 @@ export const useFetch = (url) => {
   useEffect(() => {
     const httpRequest = async () => {
       let json = null;
-  
+  //MÉTODO - POST E DELETE
       try {
         if (method === "POST") {
           setLoading("POST", true);
@@ -71,7 +71,6 @@ export const useFetch = (url) => {
           json = await res.json();
           setLoading("POST", false);
         } 
-        
         else if (method === "DELETE") {
           const deleteURL = `${url}/${itemId}`;
   
