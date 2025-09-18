@@ -1,0 +1,16 @@
+button { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 47%;
+    border-radius: 8px;
+    background-color: #555a61;
+    color: white;
+}
+
+button:hover {
+    background-color: #3e4147;
+    cursor: pointer;
+}

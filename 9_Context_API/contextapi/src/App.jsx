@@ -1,21 +1,24 @@
 import { useState } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Pages
 import Home from "./pages/Home";
-import Page2 from "./pages/Page2";
-import Page3 from "./pages/Page3";
+import Products from "./pages/Products";
+import About from "./pages/About";
+import NavBar from "./components/Navbar";
 
 function App() {
 
   return (
     <>
+    <h1>ContextAPI</h1>
       <BrowserRouter>
+      <NavBar/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<Page2 />} />
-          <Route path="/contact" element={<Page3 />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </>
